@@ -1,0 +1,10 @@
+x=6;
+y=7;
+console.log("==:",x==y);
+console.log("==:",x=="6");
+console.log("!=:",x!=y);
+console.log(">:",x>y);
+console.log("<:",x<y);
+console.log("<=:",x<=y);
+console.log(">=:",x>=y);
+console.log("text"< "john");
