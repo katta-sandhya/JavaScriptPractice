@@ -5,5 +5,5 @@ const myObject = {
       return this.firstName + " " + this.lastName;
     }
   }
- const Fullname= myObject.fullName.call();
+ const Fullname= myObject.fullName();
  console.log(Fullname);

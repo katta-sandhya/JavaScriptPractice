@@ -1,4 +1,4 @@
-function names(name="sandhya")
+function names(name="sandhya")//function with default parameter
 {
     return name;
 }

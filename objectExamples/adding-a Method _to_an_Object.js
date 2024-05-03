@@ -6,7 +6,7 @@ property:function()
 {
     return this.firstName+"'s " + "eyecolor is " +this.eyecolor;
 }};
-Details.name=function()
+Details.name=function()//adding a method to an object
 {
     return this.firstName + " " + this.lastName;
 }

@@ -2,7 +2,7 @@ function outerFunction() {
     let counter = 0;
 
     return function() {
-        counter++;
+        counter++;//variable increment inside a inline function is not destroyed by using this function
         return counter;
     };
 }
