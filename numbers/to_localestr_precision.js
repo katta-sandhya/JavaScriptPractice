@@ -1,4 +1,4 @@
-console.log("toLocaleString()");
+console.log("toLocaleString()");//returns a number as a string, using local language format
 const num = 1000000;
 const text = num.toLocaleString();
 const text1 = num.toLocaleString("en-IN");
@@ -7,7 +7,7 @@ let text2 = num.toLocaleString("en-IN", {style:"currency", currency:"INR"});
 console.log(text);
 console.log(text1);
 console.log(text2);
-console.log("toPrecision()");
+console.log("toPrecision()");//formats a number to a specified length.
 const a = 13.3714;
 const n = a.toPrecision(2);
 console.log(n);
