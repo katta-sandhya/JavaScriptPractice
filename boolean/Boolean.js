@@ -1,0 +1,10 @@
+console.log(Boolean(10>9));
+console.log(23<12);
+console.log(Boolean(0));
+console.log(Boolean(-0));
+console.log(Boolean(""));
+console.log(Boolean(1));
+let x;
+console.log(Boolean(x));
+let y = null;
+console.log(Boolean(y));
