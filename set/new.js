@@ -28,4 +28,4 @@ console.log(letters1.size);
 console.log(letters1);
 console.log(letters1.delete("a"));
 console.log(letters1);
-console.log(typeof letters1);
+console.log(typeof letters1);//typeof

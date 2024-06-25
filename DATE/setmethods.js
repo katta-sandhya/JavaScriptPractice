@@ -13,13 +13,7 @@ console.log("----------------------------------");
 console.log(d.setMilliseconds(121));//sets the milliseconds of a date.
 console.log(d1.setMilliseconds(21));
 console.log("----------------------------------");
-console.log(d.setMinutes(d.getMinutes() - 90));//set the minutes of a date
-console.log("----------------------------------");
-console.log(d.setMonth(12));//sets the month of a date.
-console.log(d1.setMonth(11));
-console.log("----------------------------------");
-console.log(d.setSeconds(21));//set the seconds of a date
-console.log("----------------------------------");
+
 
 
 

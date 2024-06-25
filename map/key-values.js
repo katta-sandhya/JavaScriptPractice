@@ -7,7 +7,7 @@ const fruits = new Map([
   
   // List all values
   let text = "";
-  for (const x of fruits.keys()) {//keys
+  for (const x of fruits.keys()) {//keys() :returns an iterator object with the keys in a map.
     text += x + "\n";
   }
   console.log(text);
@@ -21,7 +21,7 @@ const fruit = new Map([
   
   // List all values
   let text1 = "";
-  for (const x of fruits.values()) {//values
+  for (const x of fruits.values()) {//values() :returns an iterator object with the values in a map.
     text1 += x + "\n";
   }
   console.log(text1);
