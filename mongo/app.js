@@ -7,7 +7,7 @@ const url = 'mongodb://localhost:27017';
 const client = new MongoClient(url);
 
 // Database Name
-const dbName = 'myProject';
+const dbName = 'nosql';
 
 async function main() {
   // Use connect method to connect to the server
@@ -32,12 +32,15 @@ console.log('Found documents filtered by { a: 3 } =>', filteredDocs);
 const updateResult = await collection.updateOne({ a: 3 }, { $set: { b: 1 } });
 console.log('Updated documents =>', updateResult);*/
 
-const findResult = await collection.find({}).toArray();
-console.log('Found documents =>', findResult);
+
 
 //delete
 /*const deleteResult = await collection.deleteMany({ a: 3 });
 console.log('Deleted documents =>', deleteResult);*/
+
+
+
+
 
   return 'done.';
 }
