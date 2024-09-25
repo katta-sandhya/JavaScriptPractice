@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Links</title>
+</head>
+<body>
+    <h1>Study Links</h1>
+    <% if (isAdmin) { %>
+        <h2>Manage Links</h2>
+        <!-- Form to Add New Link -->
+        <form action="/study_link_admin/addLinks" method="POST">
+            <input type="hidden" name="action" value="add">
+            <label>Link URL: <input type="text" name="url" required></label>
+            <label>Description: <input type="text" name="name" required></label>
+            <button type="submit">Add Link</button>
+        </form>
+        <!-- List of Existing Links with Update and Delete Options -->
+        <% links.forEach(link => { %>
+            <form action="/study_link_admin/updateLinks" method="POST">
+                <input type="hidden" name="action" value="update">
+                <input type="hidden" name="id" value="<%= link.id %>">
+                <label>Link URL: <input type="text" name="url" value="<%= link.url %>" required></label>
+                <label>Description: <input type="text" name="name" value="<%= link.name %>" required></label>
+                <button type="submit">Update</button>
+            </form>
+            <form action="/study_link_admin/deleteLinks" method="POST">
+                <input type="hidden" name="action" value="delete">
+                <input type="hidden" name="id" value="<%= link.id %>">
+                <button type="submit">Delete</button>
+            </form>
+        <% }) %>
+    <% } %>
+</body>
+</html>
