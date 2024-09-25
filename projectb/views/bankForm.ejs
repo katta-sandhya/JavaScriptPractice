@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Form</title>
+</head>
+<body>
+    <h1>Bank Form</h1>
+    <form action="/bankForm" method="POST">
+        <label for="deposit">Deposits</label>
+        <input type="text" id="deposit" name="deposit" required>
+
+        <label for="description">Description:</label>
+        <select id="description" name="description">
+            <option value="ATM">ATM</option>
+            <option value="cash">Cash</option>
+            <option value="bank">Bank</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

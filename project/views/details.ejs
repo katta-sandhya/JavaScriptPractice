@@ -4,8 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <h1>New Registeration</h1>
 </head>
 <body>
-  <p>Hello world</p>
+     <form action="http://localhost:3000/insert" method="POST">
+        <label for="FN">NAME :</label>
+        <input type="text" name="first_name" id="FN" required>
+        <br><br>
+        <label for="LN">LASTNAME :</label>
+        <input type="text" name="last_name" id="LN" required>
+        <br><br>
+        <label for="PN">PHNO :</label>
+        <input type="tel" name="phone_number" id="PN"  pattern="\d{10}" required>
+        <br><br>
+        <label for="E">Email</label>
+        <input type="email" name="email" id="E" required>
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+
+        
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select...</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+            <option value="prefer_not_to_say">Prefer not to say</option>
+        </select>
+        <br><br>
+
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="0" required>
+        <br><br>
+
+        
+        <label for="degree">Degree:</label>
+        <input type="text" id="degree" name="degree" required>
+        <br><br>
+        <input type="submit" name="" id="">  
+         
+<br><br>
+        <a href="/user_login" class="button">User Login</a>
+        <br><br><br>
+        <a href="/admin_login" class="button">Admin Login</a>
+
+    </form>   
 </body>
 </html>
