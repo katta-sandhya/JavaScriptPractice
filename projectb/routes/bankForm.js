@@ -54,7 +54,7 @@ router.post('/bankForm', (req, res) => {
                 service: 'Outlook365',
                 auth: {
                     user: 'katta.sandhya9999@outlook.com',  // Your email
-                    pass: 'Sandhya@2223',  // Your password or app-specific password
+                    pass: 'xxxxxxxxxx',  // Your password or app-specific password
                 },
             });
 
