@@ -9,3 +9,12 @@ console.log(result);
     console.log("Hello, " + name + "!");
 })("Sandhya");
 
+
+
+
+
+
+(function(names){
+    console.log(names)
+})("sandy");
+
