@@ -97,3 +97,12 @@ router.get('/message', (req, res) => {
 });
 
 module.exports = router;
+
+
+
+
+//nodemailer methods used in this 
+//1-nodemailer.createTransport
+//2-transporter.sendmail
+//3-mailoptions object
+//4-attachments property
