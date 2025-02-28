@@ -1,21 +1,18 @@
-function asyncOperation(success){
-    return new Promise((resolve, reject) =>{
-    setTimeout(() => 
-        {
-            if(success){
-               resolve("operation success");
-            }
-            else {
-                reject("operation failed");
-            }
-        }, 2000);
-});
+function asyncOperation(success) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (success) {
+        resolve("operation success");
+      } else {
+        reject("operation failed");
+      }
+    }, 2000);
+  });
 }
-asyncOperation(false).then(message => {
+asyncOperation(true)
+  .then((message) => {
     console.log(message);
-}) .catch(error =>
-    {
-        console.log(error);
-    });
-
-
+  })
+  .catch((error) => {
+    console.log(error);
+  });
