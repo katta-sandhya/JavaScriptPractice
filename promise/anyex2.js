@@ -1,12 +1,20 @@
-const promise1 = new Promise((resolve, reject) => setTimeout(resolve, 500, 'Error 1'));
-const promise2 = new Promise((resolve, reject) => setTimeout(resolve, 100, 'Error 2'));
-const promise3 = new Promise((resolve, reject) => setTimeout(resolve, 200, 'Success'));
+const promise1 = new Promise((resolve, reject) =>
+  setTimeout(resolve, 500, "Error 1")
+);
+const promise2 = new Promise((resolve, reject) =>
+  setTimeout(resolve, 100, "Error 2")
+);
+const promise3 = new Promise((resolve, reject) =>
+  setTimeout(resolve, 200, "Success")
+);
 
-Promise.any([promise1, promise2, promise3]).then((value) => {
-  console.log(value);
-}).catch((error) => {
-  console.error(error.errors); // Outputs array of errors
-});
+Promise.any([promise1, promise2, promise3])
+  .then((value) => {
+    console.log(value);
+  })
+  .catch((error) => {
+    console.error(error.errors); // Outputs array of errors
+  });
 
 /*const promise1 = new Promise((resolve, reject) => setTimeout(() => {
     console.log('promise1 rejected at 500ms');
@@ -30,4 +38,3 @@ Promise.any([promise1, promise2, promise3]).then((value) => {
     .catch((error) => {
       console.error('Promise.any rejected with errors:', error.errors);
     });*/
-  
