@@ -1,0 +1,121 @@
+/* General Reset */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffe6e6; /* Light red background */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Container */
+.auth-container {
+  display: flex;
+  width: 80%;
+  max-width: 900px;
+  height: 500px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Branding Section (Left Side) */
+.branding {
+  flex: 1;
+  background: #ffe6e6; /* Deep red */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+}
+
+.branding h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.branding p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.branding button {
+  background-color: white;
+  color: #ffe6e6;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.branding button:hover {
+  background-color: #ffcccc;
+}
+
+/* Authentication Form (Right Side) */
+.auth-form {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-form h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #333;
+}
+
+.auth-form input {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.auth-form button {
+  width: 100%;
+  max-width: 320px;
+  padding: 10px;
+  background: #ffe6e6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.auth-form button:hover {
+  background: #ffe6e6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .auth-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .branding {
+    padding: 20px;
+  }
+
+  .auth-form {
+    padding: 30px;
+  }
+}

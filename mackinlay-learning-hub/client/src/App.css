@@ -1,0 +1,20 @@
+/* Reset default styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffe6e6; /* Light red background */
+}
+
+/* Centering content */
+.App {
+  text-align: center;
+}
+
+/* Styling for the dashboard heading */
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin-top: 50px;
+}
